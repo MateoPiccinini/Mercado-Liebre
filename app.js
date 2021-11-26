@@ -1,8 +1,16 @@
-const exrpess = require('express');
+const express = require('express');
 const path = require('path');
+
+const publicPath = path.resolve(__dirname, './public')
 
 const app = express();
 
-app.listen(3777, function(){
+app.use(express.static(publicPath));
+
+app.get('/', function(req,res){
+    res.sendFile(path.join(__dirname, './views/home.html'));
+});
+
+app.listen(3797, function(){
     console.log('servidor corriendo');
 });
