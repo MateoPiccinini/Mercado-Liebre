@@ -1,0 +1,43 @@
+#titulo_cuotas{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#logo_ml{
+    height: 9.375em;
+    width: 21.875em;
+    margin-left: 2.5em;
+}
+
+#barra_buscar{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 2.5em;
+    width: 25em;
+    height: 1.5em;
+}
+
+#body{
+    background-color: #EAC926;
+}
+
+.lista1{
+    font-size: 1.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    height: 1.3em;
+}
+
+#compra{
+    display : flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+}
