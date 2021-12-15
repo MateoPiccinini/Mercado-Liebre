@@ -57,3 +57,24 @@ justify-content: center;
     margin-left: 0.3em;
     margin-right: 1em;
 }
+
+#ultvis{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    list-style: none;
+}
+
+.subtit{
+    margin-left: 1em;
+}
+
+.prodinf{
+    margin-left: 4em;
+}
+
+.off{
+    color: #27c50a;
+}
