@@ -1,80 +1,181 @@
-#titulo_cuotas{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bold;
+
+ul{ /* sacar puntos a todas las listas*/
+    list-style: none;
 }
 
-#logo_ml{
-    height: 9.375em;
-    width: 21.875em;
-    margin-left: 2.5em;
-}
-
-#barra_buscar{
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    margin-left: 2.5em;
-    width: 25em;
-    height: 1.5em;
-}
+/* header */
 
 header{
     background-color: #EAC926;
+    padding-top: 0.8em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.3em;
 }
 
-.lista1{
-    font-size: 1.5em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 1em;
-    height: 1.3em;
+#flexhead{ /* flex de header entero */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#compra{
+#logo_ml{ /* logo */
+    height: 3em;
+    width: 15em;
+    margin-bottom: 0.4em
+}
+
+.input-group-default{ /* barra de buscar + boton */
+    width: 40em !important;
+    height: 2.8em;
+    display: flex;
+    margin-right: 2em;
+}
+
+#button-addon2{ /* boton de buscar */
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+#compra{ /* flex "compra en cuotas" + icono de mano" */
     display : flex;
-justify-content: center;
+    justify-content: center;
     flex-direction: row;
 }
 
-#navBar1{
+#mano{ /* icono mano */
+    margin-right: 0.2em;
+}
+
+#titulo_cuotas{ /* "compra en cuotas y sin tarjeta de credito" */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+#navBar1{ /* flex de primer barra de navegacion (todos los productos, etc..) */
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 #navBar2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    justify-content: end;
 }
 
-.iconNav{
+.lista1{ /* items adentro de los flex de las barras de navegacion */
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 1.3em;
+    height: 1.3em;
+}
+ 
+.iconNav{ /* flex de icono + palabra de navBar2 */
     display: flex;
 }
 
-.iconItem{
-    margin-top: 0.8em;
+.iconItem{ /* iconos de navBar2 */
+    margin-top: 1.4em;
     margin-left: 0.3em;
     margin-right: 1em;
 }
 
-#ultvis{
+/* imagen de banner */
+
+#banner{
+    width: 100%;
+    height: 19.5em;
+}
+
+/* main */
+
+main{
+    padding-right: 5em;
+    padding-left: 5em;
+    background-color: #ebebeb;
+    padding-bottom: 3em;
+}
+
+.subtit{ /* subtitulos ("basado en tu ultima visita" y "seccion de ofertas") */
+    margin-left: 1.2em;
+    font-size: 1.5em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+    padding-top: 1.3em;
+}
+
+#ultvis{ /* flex de secciones "basado en tu ultima visita" y "seccion de ofertas" */
     display: flex;
     flex-direction: row;
 }
 
-ul{
-    list-style: none;
+.card-body{ /* flex de items adentro de tarjeta (abajo de imagen) */
+    display: flex;
+    height: 3em;
 }
 
-.subtit{
-    margin-left: 1em;
+.prodinf{ /* informacion del producto (precio) */
+    font-size: 1.2em;
 }
 
-.prodinf{
-    margin-left: 4em;
-}
-
-.off{
+.off{ /* descuento */
     color: #27c50a;
+    margin-left: 0.4em;
+    margin-top: 0.2em;
+}
+
+/* footer */
+
+footer{
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1em;
+    padding-top: 3em;
+}
+
+#flexFoot{ /* flex del footer entero */
+    display: flex;
+    align-content: center;
+}
+
+.subflexFoot{ /* flex de cada subseccion (ej: paga con tarjeta subtit + inf + icono) */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconFoot{ /* iconos del footer */
+    color: #1259c3;
+    padding-bottom: 0.4em;
+}
+
+.subtitFoot{ /* subtitulos del footer*/
+    font-size: 1.5em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0.4em;
+}
+
+.infoFoot{ /* informacion del footer */
+    color: #666;
+    text-align: center;
+}
+
+#copyright{ /* linea de copyright */
+    font-size: 0.6em;
+    color: #666;
+    padding-top: 5em;
 }
