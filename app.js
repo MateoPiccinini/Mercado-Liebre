@@ -11,6 +11,6 @@ app.get('/', function(req,res){
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
 
-app.listen(3797, function(){
+app.listen(process.env.PORT || 3797, function(){
     console.log('servidor corriendo');
 });
